@@ -34,9 +34,14 @@ btn.onclick = function() {
 
 //document.write('je t\'aime mon fils et ma fille') ;
 let input = document.querySelector('input');
+let p = document.querySelector('p');
 console.log(input);
 
 function duClic () {
+
+  document.getElementsByClassName("ifCheked").checked = true;
+  p.style.textDecoration = "line-through";
+  p.style.backgroundColor = "green";
     // ici va venir notre code 
     /* Ce qu'on c'est que TOUS les div qui se trouvent entre le "début" ET la "fin" au checked sur l'input le p qui suit input:checked+p soit mis avec une ligne au travers p text-decoration line-throught*/ // comme il faudra faire la même chose pour PLUSIEURS div, on fera une BOUCLE 
     4 + 2;
@@ -45,4 +50,8 @@ function duClic () {
 // Appel de la fonction
 let reponse = duClic();
 console.log(reponse);
+
+function unckeck() {
+  document.getElementsByClassName("ifCheked").checked = false;
+}
 
