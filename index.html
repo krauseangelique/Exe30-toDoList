@@ -14,7 +14,7 @@
         .inbox {
             max-width: 400px;
             margin: 50px auto;
-            background: white;
+            background: rgb(227, 148, 148);
             border-radius: 5px;
             box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
         }
@@ -27,16 +27,30 @@
             border-bottom: 0;
         }
 
-
+/**
+*
+*/
+        /* <button>Change color</button> */
+        /* <input type="checkbox"> */
+        input {
+            background-color : brown;
+            color : red;
+            height : 10px;
+            width: 30px;
+        }
         input[type="checkbox"] {
             margin: 20px;
         }
+        
         /* On va TRAVAILLER en JS sur cet input pour accéder au p */
         input:checked+p {
             background: #F9F9F9;
             text-decoration: line-through;
         }
+        /* LORSQUE je pousse avec la souris
+        sur le INPUT (on click sur le button => input ) le input devient BLEU
 
+/**   */
 
         p {
             margin: 0;
@@ -48,6 +62,8 @@
             font-weight: 200;
             border-left: 1px solid #D1E2FF;
         }
+
+/** */ 
     </style>
     <!--
    The following is a common layout you would see in an email client.
@@ -69,6 +85,7 @@
         <div class="item">
             <input type="checkbox">
             <p>Hold down your Shift key</p>
+            <p>Mon document.write</p>
         </div>
         <div class="item">
             <input type="checkbox">
@@ -78,19 +95,21 @@
             <input type="checkbox">
             <p>Everything in between should also be set to checked</p>
         </div>
-        <div class="item">
+<section>
+        <div id ="debut" class="item">
             <input type="checkbox">
             <p>Try to do it without any libraries</p>
         </div>
+        
         <div class="item">
             <input type="checkbox">
             <p>Just regular JavaScript</p>
         </div>
-        <div class="item">
+        <div id="fin" class="item">
             <input type="checkbox">
             <p>Good Luck!</p>
         </div>
-
+</section>
         <div class="item">
             <input type="checkbox">
             <p>Don't forget to tweet your result!</p>
