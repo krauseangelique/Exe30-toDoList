@@ -1,0 +1,78 @@
+html {
+    font-family: sans-serif;
+    background: #ffc600;
+}
+body{
+    text-align: center;
+    height: 100%;
+    background-size: cover;
+    background-color: red;
+
+}
+
+button {
+    height: 30px;
+    width: 100px;
+}
+#list{
+    width: 40%;
+    background-color :rgb(227, 148, 148);
+    margin: auto;
+}
+ul{
+    list-style-type: none;
+}
+
+.inbox {
+    max-width: 400px;
+    margin: 50px auto;
+    background: rgb(227, 148, 148);
+    border-radius: 5px;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #2f0303;
+}
+.item:last-child {
+    border-bottom: 0;
+}
+
+/**
+*
+*/
+/* <button>Change color</button> */
+/* <input type="checkbox"> */
+input {
+    background-color : brown;
+    color : red;
+    height : 10px;
+    width: 30px;
+}
+input[type="checkbox"] {
+    margin: 20px;
+}
+
+/* On va TRAVAILLER en JS sur cet input pour accéder au p */
+input:checked+p {
+    background: #F9F9F9;
+    text-decoration: line-through;
+}
+/* LORSQUE je pousse avec la souris
+sur le INPUT (on click sur le button => input ) le input devient BLEU
+
+/**   */
+
+p {
+    margin: 0;
+    padding: 20px;
+    transition: background 0.2s;
+    flex: 1;
+    font-family: 'helvetica neue';
+    font-size: 20px;
+    font-weight: 200;
+    border-left: 1px solid #D1E2FF;
+}
+
+/** */ 

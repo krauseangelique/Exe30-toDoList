@@ -112,4 +112,24 @@ months.forEach((month, index) => {
 
 // changer l'arrère plan
 // bouton
+
 // gradient linéar
+const changeGradient = document.getElementById("change");
+
+changeGradient.addEventListener('click', ()=>{
+  const red = Math.round(Math.random() *255);
+  const green = Math.round(Math.random()*255);
+  const blue = Math.round(Math.random() *255);
+  const red1 = Math.round(Math.random()*255);
+  const green1 = Math.round(Math.random()*255);
+  const blue1 = Math.round(Math.random() *255);
+
+  document.body.style.background = `linear-gradient(rgb(${red}, ${green}, ${blue}), rgb(${red1}, ${green1}, ${blue1}))`;
+});
+
+// changer le titre
+
+const titles = ["🔍", "💩", "🦄", "🤣", "😎"];
+document.getElementById('changeTitle').addEventListener('click', ()=>{
+  document.title = titles[Math.floor(Math.random() * titles.length)];
+ });
