@@ -156,3 +156,35 @@ console.log(beasts.indexOf('bison'));
   
  });
  // if index = 2 afficher une image de licorne display img
+
+ const javaScriptClass = [
+  "Marcus",
+  "Sven",
+  "Fabio",
+  "Etienne",
+  "Angélique",
+  "Wella",
+  "Kevin",
+  "Sam",
+  "Mebrouka",
+];
+
+javaScriptClass.sort();
+console.log(javaScriptClass);
+/*
+let div = document.getElementById(list);
+console.log(div);
+
+  
+
+months.forEach((month, index) => {
+  document.querySelector("ul").innerHTML += `<li> ${index + 1}. ${month} </li>`;
+});
+voir correction Discord !
+*/
+const sortedClass = javaScriptClass.sort();
+sortedClass.forEach((learner, index) => {
+  document.getElementById("sortedArray").innerHTML += `<li>${
+    index + 1
+  }. ${learner}</li>`;
+});
