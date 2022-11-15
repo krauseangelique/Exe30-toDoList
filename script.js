@@ -55,3 +55,42 @@ function unckeck() {
   document.getElementsByClassName("ifCheked").checked = false;
 }
 
+/* Correction LUCAS */
+const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+let lastChecked;
+
+function handleCheck(e) {
+  let inBetween = false;
+  console.log(e.shiftKey); // Shift pressed = TRUE || Shift not pressed = FALSE
+  const shiftKeyPressed = e.shiftKey;
+  const targeting = e.target;
+  console.log(shiftKeyPressed);
+
+    if(shiftKeyPressed && targeting.checked) {
+      checkboxes.forEach((checkbox)=> {
+        console.log(checkbox);
+
+        if(checkbox === targeting || checkbox === lastChecked) {
+
+          // toogle true false
+          inBetween = !inBetween;
+        }
+
+        if(inBetween) {
+          checkbox.checked = true;
+        }
+      });
+    }
+
+    lastChecked = targeting;
+  
+}
+
+checkboxes.forEach((checkbox) => {
+  checkbox.addEventListener("click", handleCheck);
+});
+
+    
+ 
+  
+
