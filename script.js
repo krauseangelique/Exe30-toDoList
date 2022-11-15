@@ -75,9 +75,17 @@ function handleCheck(e) {
           // toogle true false
           inBetween = !inBetween;
         }
-
         if(inBetween) {
           checkbox.checked = true;
+        }
+      });
+    } else if (shiftKeyPressed && !targeting.ckecked) {
+      checkboxes.forEach((checkbox) => {
+        if (checkbox === targeting || checkbox === lastChecked) {
+          inBetween = !inBetween;
+        }
+        if (inBetween) {
+          checkbox.checked = false;
         }
       });
     }
@@ -90,7 +98,14 @@ checkboxes.forEach((checkbox) => {
   checkbox.addEventListener("click", handleCheck);
 });
 
-    
+const months = ["January","February","March","April","May","June","July",
+"August","September","October","November","December"];   
  
+let div = document.getElementById(list);
+console.log(div);
+
   
 
+months.forEach((month, index) => {
+  document.querySelector("ul").innerHTML += `<li> ${index + 1}. ${month} </li>`;
+});
