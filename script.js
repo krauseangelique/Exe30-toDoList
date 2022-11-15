@@ -109,3 +109,7 @@ console.log(div);
 months.forEach((month, index) => {
   document.querySelector("ul").innerHTML += `<li> ${index + 1}. ${month} </li>`;
 });
+
+// changer l'arrère plan
+// bouton
+// gradient linéar
