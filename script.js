@@ -132,4 +132,27 @@ changeGradient.addEventListener('click', ()=>{
 const titles = ["🔍", "💩", "🦄", "🤣", "😎"];
 document.getElementById('changeTitle').addEventListener('click', ()=>{
   document.title = titles[Math.floor(Math.random() * titles.length)];
+  /*
+  const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
+
+console.log(beasts.indexOf('bison'));
+// expected output: 1
+
+  */
+  if(document.title === "🦄"){
+    /* add display img into div#im
+    var img = document. createElement("img");
+    img.src = "images/"+thisImg;
+    document.getElementById('imageDiv').appendChild(img);
+    document.querySelector("img").style.display = "block";
+  } else {
+    document.querySelector("img").style.display = "none";
+  }
+  */
+  document.querySelector("img").style.display = "block";
+  } else {
+    document.querySelector("img").style.display = "none";
+  }
+  
  });
+ // if index = 2 afficher une image de licorne display img
