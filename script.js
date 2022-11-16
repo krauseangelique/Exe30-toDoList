@@ -169,8 +169,6 @@ console.log(beasts.indexOf('bison'));
   "Mebrouka",
 ];
 
-javaScriptClass.sort();
-console.log(javaScriptClass);
 /*
 let div = document.getElementById(list);
 console.log(div);
@@ -180,7 +178,7 @@ console.log(div);
 months.forEach((month, index) => {
   document.querySelector("ul").innerHTML += `<li> ${index + 1}. ${month} </li>`;
 });
-voir correction Discord !
+
 */
 const sortedClass = javaScriptClass.sort();
 sortedClass.forEach((learner, index) => {
