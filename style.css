@@ -74,5 +74,13 @@ p {
     font-weight: 200;
     border-left: 1px solid #D1E2FF;
 }
+input#name{
+    height: 2rem;
+    width: 15rem;
+}
+input[type="submit"]{
+    height: 2rem;
+    width: 5rem;
+}
 
 /** */ 

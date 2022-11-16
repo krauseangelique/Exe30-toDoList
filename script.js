@@ -186,3 +186,43 @@ sortedClass.forEach((learner, index) => {
     index + 1
   }. ${learner}</li>`;
 });
+
+/* 
+<div id="inputTexte">
+        <label for="name">Sirius cours:</label>
+
+        <input type="text" id="name" name="name" required
+       minlength="2" maxlength="15" size="20">
+       <input type="submit" value="Enter">
+    </div>
+*/
+const form = document.querySelector("form");
+
+function handleInput(e){
+  e.preventDefault();
+  document.getElementById(
+    "userOutput"
+  ).innerHTML +=`<li>${form[0].value}</li>`;
+  form[0] = "";
+}
+console.log(form[0].nextElementSibling);
+form.addEventListener("click", handleInput);
+
+/* Date et heure en JS */
+var today = new Date();
+console.log(today.toString()); // retournera une représentation sous forme de chaîne de caractères de l’objet Date.
+console.log(today.getHours());
+console.log(today.getMinutes());
+console.log(today.getSeconds());
+
+// Afficher l'heure actuelle en JS
+var d= new Date();
+var hours = d.getHours() + " : " + d.getMinutes() + " : " + d.getSeconds();
+console.log(hours);
+
+// je vais mettre à l'intérieur de l'ul les li heure min sec
+
+  document.getElementById("hour").innerHTML =`<li>${hours}</li>`;
+ 
+
+
